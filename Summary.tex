@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{PS8}
+\author{Alexandra Penner}
+\date{March 2018}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+The traditional stats collected in footbal like total yards, and time of possession are a poor indicator of victory.
+
+Efficiency stats and field possession are far more predictive.
+
+\section{literature}
+SB Nation tracks five factors Explosiveness, Efficiency, field position, finishing drives, and turnovers.
+
+These factor's can be tracked by Football outsiders equivalent points per play, success rate, average starting field position, points per trip inside the forty, and turnover margin.  Equivalent points per play kuses proprietary coefficients for yards lines so i will use the similarly distributed expected points per play
+
+\section{data}
+The data I have is play by play data from 2009-2016.  It includes down and distance, play types(run left, pass deep middle, etc.0 and individual stats.
+
+\section{methods}
+I am reshaping the data in per game stats: yards per play, variance of yards per play, skewness of yards per play, kurtosis of yards gained per play, total yards, number of plays, completion percentage,  time of posession, expected points per play, success rate, average starting field position, points per trip inside the forty, turnover margin,  winner.
+
+From there I will throw classification algorithms at it.
+
+\section{findings}
+I expect the five factors will be most predictive, and volume stats (TOP, total yards) will be least predictive.
+
+\section{sources}
+Football Outsiders, 2018
+https://www.footballoutsiders.com/index.php?q=info/glossary#ncaa_success_rate
+
+Connelly, 2014
+https://www.footballstudyhall.com/2014/1/24/5337968/college-football-five-factors
+
+ryuko, 2017 (data)
+https://github.com/ryurko/nflscrapR-data
+
+
+\end{document}
